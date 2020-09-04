@@ -6,7 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>BarberShopHQ</title>
 </head>
-<body>
-  <h2>Список наших парикмахеров:</h2>
-</body>
+  <body>
+    <h2>Список наших парикмахеров:</h2>
+
+    <% @barbers.each do |barber| %>
+      <p>
+        <%= barber.id %>. <%= barber.name %>
+      </p>
+    <% end %>
+  </body>
 </html>
