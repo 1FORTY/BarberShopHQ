@@ -20,3 +20,23 @@ get '/' do
 
   erb :index
 end
+
+get '/visit' do
+  @barbers = Barber.all
+
+  erb :visit
+end
+
+post '/visit' do
+
+
+  @username = params[:username]
+  @phone = params[:phone]
+  @datetime = params[:datetime]
+  @barber = params[:barber]
+  @color = params[:color]
+
+
+  erb "Спасибо, вы записаны."
+
+end
