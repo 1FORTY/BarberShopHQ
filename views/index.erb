@@ -14,5 +14,13 @@
         <%= barber.id %>. <%= barber.name %>
       </p>
     <% end %>
+
+    <h2>Order(отсартированный список): </h2>
+
+    <% @barbers_2.each do |barber| %>
+      <p>
+        <%= barber.id %>. <%= barber.name %>
+      </p>
+    <% end %>
   </body>
 </html>
